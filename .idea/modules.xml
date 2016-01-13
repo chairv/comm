@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/comm.iml" filepath="$PROJECT_DIR$/.idea/comm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/comm-cache/comm-cache.iml" filepath="$PROJECT_DIR$/comm-cache/comm-cache.iml" />
+      <module fileurl="file://$PROJECT_DIR$/comm-utils/comm-utils.iml" filepath="$PROJECT_DIR$/comm-utils/comm-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/comm-wx/comm-wx.iml" filepath="$PROJECT_DIR$/comm-wx/comm-wx.iml" />
+    </modules>
+  </component>
+</project>

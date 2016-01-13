@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>comm</groupId>
+    <artifactId>comm</artifactId>
+    <version>${project.version}</version>
+    <packaging>pom</packaging>
+
+
+    <properties>
+        <project.version>1.0</project.version>
+        <porject.encoding>UTF-8</porject.encoding>
+        <spring.version>3.2.10.RELEASE</spring.version>
+        <slf4j.version>1.7.2</slf4j.version>
+        <jackson.version>2.6.3</jackson.version>
+    </properties>
+
+    <modules>
+        <module>comm-cache</module>
+        <module>comm-utils</module>
+        <module>comm-wx</module>
+    </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.3.2</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                    <encoding>${porject.encoding}</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+
+    </build>
+</project>
