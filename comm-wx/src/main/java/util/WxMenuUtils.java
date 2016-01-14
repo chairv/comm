@@ -1,4 +1,4 @@
-package wx.util;
+package util;
 
 import com.alibaba.fastjson.JSONObject;
 import utils.HttpUtils;
@@ -51,10 +51,4 @@ public class WxMenuUtils {
 		return object.getString("errmsg");
 	}
 
-	public static void main(String[] args) throws Exception {
-		String token = "9pP_f1QHdiIfPdR0U_T66wCiahraLNkcNQcPM1M4tybBj0eKq0waVVNA4FeRHK81xFOMEUhEzbn1BIKBFsW3dnawHXG7nmrNJdsoUAaCTCcLDQiADAASF";
-		String content = "{\"touser\":\"" + "o3dQDuMaR9knhspsG3XiCfAFAH-k" + "\",\"msgtype\":\"text\",\"text\":{\"content\":\""
-				+ "<a href='http://zz.ittun.com/index.jsp'>新手指引</a>" + "\"}}";
-        sendMsg(content,token);
-	}
 }
