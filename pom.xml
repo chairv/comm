@@ -5,12 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>comm</groupId>
     <artifactId>comm</artifactId>
-    <version>${project.version}</version>
+    <version>1.0</version>
     <packaging>pom</packaging>
 
 
     <properties>
-        <project.version>1.0</project.version>
         <porject.encoding>UTF-8</porject.encoding>
         <spring.version>3.2.10.RELEASE</spring.version>
         <slf4j.version>1.7.2</slf4j.version>
