@@ -1,4 +1,4 @@
-package main.java.weixin.popular.bean.pay;
+package weixin.popular.bean.pay;
 
 /**
  * 申请退款交互返回inputStream xml 数据

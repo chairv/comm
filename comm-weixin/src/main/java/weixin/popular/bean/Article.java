@@ -1,4 +1,4 @@
-package main.java.weixin.popular.bean;
+package weixin.popular.bean;
 
 /**
  * 高级群发接口  图文消息素材

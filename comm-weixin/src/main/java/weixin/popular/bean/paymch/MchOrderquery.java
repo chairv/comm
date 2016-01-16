@@ -1,4 +1,4 @@
-package main.java.weixin.popular.bean.paymch;
+package weixin.popular.bean.paymch;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

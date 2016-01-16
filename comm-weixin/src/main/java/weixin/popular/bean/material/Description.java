@@ -1,4 +1,4 @@
-package main.java.weixin.popular.bean.material;
+package weixin.popular.bean.material;
 
 /**
  * 新增永久视频素材需特别注意

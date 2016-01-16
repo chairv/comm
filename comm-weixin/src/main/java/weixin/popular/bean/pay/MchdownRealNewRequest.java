@@ -1,4 +1,4 @@
-package main.java.weixin.popular.bean.pay;
+package weixin.popular.bean.pay;
 
 /**
  * 对帐单下载请求参数

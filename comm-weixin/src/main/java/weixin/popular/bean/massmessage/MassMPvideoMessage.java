@@ -1,4 +1,4 @@
-package main.java.weixin.popular.bean.massmessage;
+package weixin.popular.bean.massmessage;
 
 import java.util.HashMap;
 import java.util.Map;

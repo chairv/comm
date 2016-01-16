@@ -1,4 +1,4 @@
-package main.java.weixin.popular.bean.component;
+package weixin.popular.bean.component;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;

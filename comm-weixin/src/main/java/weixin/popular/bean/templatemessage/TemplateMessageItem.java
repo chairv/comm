@@ -1,4 +1,4 @@
-package main.java.weixin.popular.bean.templatemessage;
+package weixin.popular.bean.templatemessage;
 
 public class TemplateMessageItem{
 	private String value;

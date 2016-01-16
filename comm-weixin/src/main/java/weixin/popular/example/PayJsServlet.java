@@ -1,4 +1,4 @@
-package main.java.weixin.popular.example;
+package weixin.popular.example;
 
 import java.io.IOException;
 

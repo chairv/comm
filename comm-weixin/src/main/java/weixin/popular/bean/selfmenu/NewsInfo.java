@@ -1,4 +1,4 @@
-package main.java.weixin.popular.bean.selfmenu;
+package weixin.popular.bean.selfmenu;
 
 import java.util.List;
 

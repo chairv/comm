@@ -1,4 +1,4 @@
-package main.java.weixin.popular.bean.pay;
+package weixin.popular.bean.pay;
 
 import com.alibaba.fastjson.annotation.JSONField;
 

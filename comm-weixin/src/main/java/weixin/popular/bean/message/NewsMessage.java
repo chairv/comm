@@ -1,4 +1,4 @@
-package main.java.weixin.popular.bean.message;
+package weixin.popular.bean.message;
 
 import java.util.List;
 

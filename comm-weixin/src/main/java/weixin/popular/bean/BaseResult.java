@@ -1,4 +1,4 @@
-package main.java.weixin.popular.bean;
+package weixin.popular.bean;
 
 /**
  * 微信请求状态数据

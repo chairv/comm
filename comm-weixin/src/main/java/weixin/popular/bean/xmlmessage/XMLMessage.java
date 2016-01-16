@@ -1,12 +1,10 @@
-package main.java.weixin.popular.bean.xmlmessage;
+package weixin.popular.bean.xmlmessage;
 
 import java.io.IOException;
 import java.io.OutputStream;
 import java.io.UnsupportedEncodingException;
 import java.util.UUID;
 
-import com.qq.weixin.mp.aes.AesException;
-import com.qq.weixin.mp.aes.WXBizMsgCrypt;
 
 public abstract class XMLMessage {
 
@@ -53,7 +51,7 @@ public abstract class XMLMessage {
 		return true;
 	}
 
-	public boolean outputStreamWrite(OutputStream outputStream,WXBizMsgCrypt bizMsgCrypt){
+	public boolean outputStreamWrite(OutputStream outputStream,  com.qq.weixin.mp.aes.WXBizMsgCrypt bizMsgCrypt){
 		if(bizMsgCrypt != null){
 			try {
 				String outputStr = bizMsgCrypt.encryptMsg(toXML(), System.currentTimeMillis()+"",UUID.randomUUID().toString());
@@ -65,7 +63,7 @@ public abstract class XMLMessage {
 			} catch (IOException e) {
 				e.printStackTrace();
 				return false;
-			} catch (AesException e) {
+			} catch (com.qq.weixin.mp.aes.AesException e) {
 				e.printStackTrace();
 				return false;
 			}

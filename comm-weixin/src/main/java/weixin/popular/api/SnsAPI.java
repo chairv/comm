@@ -1,4 +1,4 @@
-package main.java.weixin.popular.api;
+package weixin.popular.api;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;

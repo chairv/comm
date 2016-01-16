@@ -1,4 +1,4 @@
-package main.java.weixin.popular.bean.component;
+package weixin.popular.bean.component;
 
 import java.util.List;
 

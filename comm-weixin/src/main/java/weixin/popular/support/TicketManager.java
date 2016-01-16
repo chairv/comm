@@ -1,4 +1,4 @@
-package main.java.weixin.popular.support;
+package weixin.popular.support;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;

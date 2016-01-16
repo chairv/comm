@@ -1,4 +1,4 @@
-package main.java.weixin.popular.api;
+package weixin.popular.api;
 
 import java.nio.charset.Charset;
 import java.util.HashMap;

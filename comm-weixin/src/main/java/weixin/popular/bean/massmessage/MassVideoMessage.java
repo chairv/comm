@@ -1,4 +1,4 @@
-package main.java.weixin.popular.bean.massmessage;
+package weixin.popular.bean.massmessage;
 
 import weixin.popular.bean.Uploadvideo;
 

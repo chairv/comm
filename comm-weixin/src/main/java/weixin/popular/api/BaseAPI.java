@@ -1,4 +1,4 @@
-package main.java.weixin.popular.api;
+package weixin.popular.api;
 
 import org.apache.http.Header;
 import org.apache.http.HttpHeaders;

@@ -1,18 +1,13 @@
-package main.java.weixin.popular.api;
-
-import java.nio.charset.Charset;
+package weixin.popular.api;
 
 import org.apache.http.client.methods.HttpUriRequest;
 import org.apache.http.client.methods.RequestBuilder;
 import org.apache.http.entity.StringEntity;
-
 import weixin.popular.bean.BaseResult;
-import weixin.popular.bean.component.AuthorizerAccessToken;
-import weixin.popular.bean.component.AuthorizerInfo;
-import weixin.popular.bean.component.AuthorizerOption;
-import weixin.popular.bean.component.ComponentAccessToken;
-import weixin.popular.bean.component.PreAuthCode;
+import weixin.popular.bean.component.*;
 import weixin.popular.client.LocalHttpClient;
+
+import java.nio.charset.Charset;
 
 /**
  * 第三方平台

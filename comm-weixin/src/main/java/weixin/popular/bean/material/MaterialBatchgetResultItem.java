@@ -1,4 +1,4 @@
-package main.java.weixin.popular.bean.material;
+package weixin.popular.bean.material;
 
 public class MaterialBatchgetResultItem {
 

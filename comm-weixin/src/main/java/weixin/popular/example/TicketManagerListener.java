@@ -1,4 +1,4 @@
-package main.java.weixin.popular.example;
+package weixin.popular.example;
 
 import javax.servlet.ServletContextEvent;
 import javax.servlet.ServletContextListener;

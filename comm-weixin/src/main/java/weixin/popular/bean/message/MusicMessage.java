@@ -1,4 +1,4 @@
-package main.java.weixin.popular.bean.message;
+package weixin.popular.bean.message;
 
 public class MusicMessage extends Message {
 

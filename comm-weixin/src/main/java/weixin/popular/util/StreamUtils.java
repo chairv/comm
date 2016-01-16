@@ -1,4 +1,4 @@
-package main.java.weixin.popular.util;
+package weixin.popular.util;
 
 import java.io.ByteArrayOutputStream;
 import java.io.FilterInputStream;

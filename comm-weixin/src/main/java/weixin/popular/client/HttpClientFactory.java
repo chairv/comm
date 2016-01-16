@@ -1,4 +1,4 @@
-package main.java.weixin.popular.client;
+package weixin.popular.client;
 
 import java.security.KeyManagementException;
 import java.security.KeyStore;

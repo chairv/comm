@@ -1,4 +1,4 @@
-package main.java.weixin.popular.bean;
+package weixin.popular.bean;
 
 public class Delivernotify {
 

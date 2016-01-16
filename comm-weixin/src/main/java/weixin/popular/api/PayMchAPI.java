@@ -1,4 +1,4 @@
-package main.java.weixin.popular.api;
+package weixin.popular.api;
 
 import java.io.IOException;
 import java.nio.charset.Charset;

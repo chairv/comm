@@ -6,7 +6,7 @@
 
 // ------------------------------------------------------------------------
 
-package main.java.com.qq.weixin.mp.aes;
+package com.qq.weixin.mp.aes;
 
 import java.security.MessageDigest;
 import java.util.Arrays;
