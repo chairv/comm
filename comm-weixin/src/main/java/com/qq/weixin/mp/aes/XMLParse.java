@@ -21,6 +21,15 @@ import java.io.StringReader;
  * XMLParse class
  *
  * 提供提取消息格式中的密文及生成回复消息格式的接口.
+ *
+ * String.format()用法
+ * 1、转换符
+     %s: 字符串类型，如："ljq"
+     %b: 布尔类型，如：true
+     %d: 整数类型(十进制)，如：99
+     %f: 浮点类型，如：99.99
+     %%: 百分比类型，如：％
+     %n: 换行符
  */
 class XMLParse {
 
