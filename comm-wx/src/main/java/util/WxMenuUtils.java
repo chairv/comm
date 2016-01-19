@@ -2,7 +2,6 @@ package util;
 
 import com.alibaba.fastjson.JSONObject;
 import utils.HttpUtils;
-import utils.JsonUtil;
 
 /**
  * 微信自定义菜单创建
