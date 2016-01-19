@@ -1,7 +1,9 @@
 package util;
 
-import com.alibaba.fastjson.JSONObject;
-import utils.HttpUtils;
+import com.squareup.okhttp.Request;
+import com.squareup.okhttp.RequestBody;
+import http.HttpUtils;
+import model.BaseResult;
 
 /**
  * 微信自定义菜单创建
@@ -10,27 +12,19 @@ public class WxMenuUtils {
 	/**
 	 * 发送消息
 	 */
-	public static String sendMsg(String params, String accessToken) throws Exception {
+	public static BaseResult sendMsg(String params, String accessToken) throws Exception {
 		String url = "https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token=" + accessToken;
-		JSONObject object = HttpUtils.postJson(url, params);
-		return object.getString("errmsg");
+		Request request = new Request.Builder().url(url).post(RequestBody.create(HttpUtils.JSON_TYPE, params)).build();
+		return HttpUtils.execute(request, BaseResult.class);
 	}
 
 	/**
 	 * 创建菜单
 	 */
-	public static String createMenu(String params, String accessToken) throws Exception {
+	public static BaseResult createMenu(String params, String accessToken) throws Exception {
 		String url = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token=" + accessToken;
-		JSONObject object = HttpUtils.postJson(url, params);
-		return object.getString("errmsg");
-	}
-
-	/**
-	 * 获取accessToken
-	 */
-	public static JSONObject getAccessToken(String appid, String secret) throws Exception {
-		String url = "https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=" + appid + "&secret=" + secret;
-		return JsonUtil.parseObject(HttpUtils.get(url));
+		Request request = new Request.Builder().url(url).post(RequestBody.create(HttpUtils.JSON_TYPE, params)).build();
+		return HttpUtils.execute(request, BaseResult.class);
 	}
 
 	/**
@@ -44,10 +38,10 @@ public class WxMenuUtils {
 	/**
 	 * 删除自定义菜单
 	 */
-	public static String delMenuInfo(String accessToken) throws Exception {
+	public static BaseResult delMenuInfo(String accessToken) throws Exception {
 		String url = "https://api.weixin.qq.com/cgi-bin/menu/delete?access_token=" + accessToken;
-		JSONObject object = JsonUtil.parseObject(HttpUtils.get(url));
-		return object.getString("errmsg");
+		Request request = new Request.Builder().url(url).build();
+		return HttpUtils.execute(request, BaseResult.class);
 	}
 
 }

@@ -16,7 +16,7 @@ import org.jdom.Document;
 import org.jdom.JDOMException;
 import org.jdom.output.XMLOutputter;
 
-import utils.HttpUtils;
+import http.HttpUtils;
 
 public final class WeiXinTools {
 	// 微信模板消息接口
