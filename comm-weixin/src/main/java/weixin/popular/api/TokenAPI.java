@@ -24,4 +24,8 @@ public class TokenAPI extends BaseAPI{
 		return LocalHttpClient.executeJsonResult(httpUriRequest,Token.class);
 	}
 
+	public static void main(String[] args) {
+		System.out.println(token("wx62aa1895c2c35ffd","e2a12b12d7fe55822cb5186c6ee19f2a"));
+	}
+
 }
