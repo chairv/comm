@@ -14,7 +14,7 @@ public class WxMenuUtils {
 	 */
 	public static BaseResult sendMsg(String params, String accessToken) throws Exception {
 		String url = "https://api.weixin.qq.com/cgi-bin/message/custom/send?access_token=" + accessToken;
-		Request request = new Request.Builder().url(url).post(RequestBody.create(HttpUtils.JSON_TYPE, params)).build();
+		Request request = HttpUtils.postJsonRequest(url,params);
 		return HttpUtils.execute(request, BaseResult.class);
 	}
 
