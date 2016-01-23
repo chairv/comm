@@ -1,18 +1,18 @@
 package utils;
 
-import org.apache.commons.configuration.Configuration;
 import org.apache.commons.configuration.ConfigurationException;
 import org.apache.commons.configuration.PropertiesConfiguration;
+import org.apache.commons.configuration.reloading.FileChangedReloadingStrategy;
 
 import java.util.List;
 
 public class SysConf {
-	private static Configuration configuration;
+	private static PropertiesConfiguration configuration;
 
 	static {
 		try {
-			configuration = new PropertiesConfiguration("SysConf.properties");
-
+			configuration = new PropertiesConfiguration("SysConfAll.properties");
+			configuration.setReloadingStrategy(new FileChangedReloadingStrategy());
 		} catch (ConfigurationException e) {
 			e.printStackTrace();
 		}

@@ -1,11 +1,17 @@
-import com.squareup.okhttp.*;
+import com.squareup.okhttp.Callback;
+import com.squareup.okhttp.Headers;
+import com.squareup.okhttp.MediaType;
+import com.squareup.okhttp.OkHttpClient;
+import com.squareup.okhttp.Request;
+import com.squareup.okhttp.Response;
 import org.junit.Test;
-import utils.HttpUtils;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.net.URLEncoder;
 
 /**
  * Created by tancw on 2015/9/15.
@@ -69,22 +75,6 @@ public class HttpTest {
 	}
 
 	@Test
-	public void post() throws IOException {
-		String url = "https://api.baidu.com/sem/common/HolmesLoginService";
-		System.out
-				.println(HttpUtils
-						.post(url,
-								"{\"username\":\"Jenny123128\",\"token\":\"95fa0a5b22c88492e754a38f461022cb\",\"request\":{\"osVersion\":\"Windows\",\"deviceType\":\"pad\",\"clientVersion\":\"1.0\"},\"uuid\":\"d745464b0b794275837343e05a0df4ef\",\"functionName\":\"preLogin\"}"));
-	}
-
-	@Test
-	public void mediaPost() throws IOException {
-		String postBody = "{\"username\":\"Jenny123128\",\"token\":\"95fa0a5b22c88492e754a38f461022cb\",\"request\":{\"osVersion\":\"Windows\",\"deviceType\":\"pad\",\"clientVersion\":\"1.0\"},\"uuid\":\"d745464b0b794275837343e05a0df4ef\",\"functionName\":\"preLogin\"}";
-		String url = "https://api.baidu.com/sem/common/HolmesLoginService";
-		System.out.println(HttpUtils.post(url, MEDIA_TYPE_MARKDOWN, postBody));
-	}
-
-	@Test
 	public void simpleHttps() throws IOException {
 		URL url = new URL("https://ebanks.gdb.com.cn/sperbank/perbankLogin.jsp");
 		HttpURLConnection con = (HttpURLConnection) url.openConnection();
@@ -97,20 +87,4 @@ public class HttpTest {
 		}
 		in.close();
 	}
-
-	@Test
-	public void tulingTest() throws IOException {
-		String content = "天气";
-		String url = "http://www.tuling123.com/openapi/api?key=11111111&info=";
-		String param = "";
-		try {
-			param = url + URLEncoder.encode(content, "utf-8");
-		} catch (UnsupportedEncodingException e) {
-			e.printStackTrace();
-		}
-
-		String rs = HttpUtils.get(param);
-		System.out.println(rs);
-	}
-
 }
