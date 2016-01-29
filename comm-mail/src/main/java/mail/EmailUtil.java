@@ -49,10 +49,10 @@ public class EmailUtil {
 	public static void main(String[] args) throws Exception {
 		Email email = new Email();
 		List<String> rec = new ArrayList<String>();
-		rec.add("chairv@yeah.net");
+		rec.add("tanchangwei-shenzhen@xyb100.com");
 		email.setAddress(rec);
 		email.setSubject("主题");
-		email.setContent("测试内容");
+		email.setContent("<div style='color:red'>测试内容2</div>");
 
 		EmailHost emailHost = new EmailHost();
 		emailHost.setSmtpHost("smtp.126.com");
