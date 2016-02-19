@@ -11,7 +11,7 @@ public class SysConf {
 
 	static {
 		try {
-			configuration = new PropertiesConfiguration("SysConfAll.properties");
+			configuration = new PropertiesConfiguration("SysConf.properties");
 			configuration.setReloadingStrategy(new FileChangedReloadingStrategy()); // 当文件变更时,刷新
 		} catch (ConfigurationException e) {
 			e.printStackTrace();
