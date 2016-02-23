@@ -26,7 +26,7 @@ public class SysConf {
 		return configuration.getFloat(key);
 	}
 
-	public static List<Object> getList(String key) {
-		return configuration.getList(key);
-	}
+    public static List<Object> getList(String key) {
+        return configuration.getList(key);
+    }
 }
