@@ -20,7 +20,6 @@
         <module>comm-cache</module>
         <module>comm-utils</module>
         <module>comm-wx</module>
-        <module>comm-weixin</module>
         <module>comm-mail</module>
     </modules>
 
