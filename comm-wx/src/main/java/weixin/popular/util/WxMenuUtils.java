@@ -1,9 +1,10 @@
 package weixin.popular.util;
 
+import weixin.popular.bean.BaseResult;
+
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.RequestBody;
 import http.HttpUtils;
-import model.BaseResult;
 
 /**
  * 微信自定义菜单创建
