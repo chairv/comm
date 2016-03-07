@@ -21,6 +21,7 @@
         <module>comm-wx</module>
         <module>comm-mail</module>
         <module>comm-mvc</module>
+        <module>comm-mongodb</module>
     </modules>
 
     <dependencies>
@@ -70,6 +71,5 @@
                 </configuration>
             </plugin>
         </plugins>
-
     </build>
 </project>
