@@ -22,6 +22,7 @@
         <module>comm-mail</module>
         <module>comm-mvc</module>
         <module>comm-mongodb</module>
+        <module>comm-ibatis</module>
     </modules>
 
     <dependencies>
