@@ -19,14 +19,14 @@ public class UserAPI extends weixin.popular.api.BaseAPI {
      * @param openid
      * @return
      */
-    public static User userInfo(String access_token, String openid) {
+    public static WeixinUser userInfo(String access_token, String openid) {
         HttpUriRequest httpUriRequest = RequestBuilder.post()
                 .setUri(BASE_URI + "/cgi-bin/user/info")
                 .addParameter("access_token", access_token)
                 .addParameter("openid", openid)
                 .addParameter("lang", "zh_CN")
                 .build();
-        return LocalHttpClient.executeJsonResult(httpUriRequest, User.class);
+        return LocalHttpClient.executeJsonResult(httpUriRequest, WeixinUser.class);
     }
 
     /**

@@ -1,17 +1,17 @@
-package weixin.popular.msg;
+package weixin.popular.bean;
 
 import java.io.Serializable;
 
-public class WeixinUser implements Serializable{
+public class WeixinUser implements Serializable {
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
-	
-	private String subscribe;
+
+	private int subscribe;
 	private String openid;
 	private String nickname;
-	private String sex;
+	private int sex;
 	private String language;
 	private String city;
 	private String province;
@@ -22,11 +22,11 @@ public class WeixinUser implements Serializable{
 	private String remark;
 	private Integer groupid;
 
-	public String getSubscribe() {
+	public int getSubscribe() {
 		return subscribe;
 	}
 
-	public void setSubscribe(String subscribe) {
+	public void setSubscribe(int subscribe) {
 		this.subscribe = subscribe;
 	}
 
@@ -46,11 +46,11 @@ public class WeixinUser implements Serializable{
 		this.nickname = nickname;
 	}
 
-	public String getSex() {
+	public int getSex() {
 		return sex;
 	}
 
-	public void setSex(String sex) {
+	public void setSex(int sex) {
 		this.sex = sex;
 	}
 
