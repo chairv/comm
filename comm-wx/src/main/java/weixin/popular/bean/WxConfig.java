@@ -1,4 +1,4 @@
-package weixin.popular.msg;
+package weixin.popular.bean;
 
 import java.io.Serializable;
 

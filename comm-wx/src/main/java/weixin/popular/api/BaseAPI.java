@@ -12,6 +12,7 @@ public abstract class BaseAPI {
 	protected static final String QRCODE_DOWNLOAD_URI = "https://mp.weixin.qq.com";
 	protected static final String MCH_URI = "https://api.mch.weixin.qq.com";
 	protected static final String OPEN_URI = "https://open.weixin.qq.com";
+	protected static final String BASE_PATH = SysConf.get("base.path");
 	protected static final String APPID = SysConf.get("weixin.appid");
 	protected static final String APPSECRET = SysConf.get("weixin.appsecret");
 

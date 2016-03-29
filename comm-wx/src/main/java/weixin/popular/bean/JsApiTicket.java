@@ -1,11 +1,11 @@
-package weixin.popular.msg;
+package weixin.popular.bean;
 
 import java.io.Serializable;
 import java.util.Date;
 
-public class WeixinToken implements Serializable {
+public class JsApiTicket implements Serializable {
 	private String name;
-	private String access_token;  
+	private String ticket;  
 	private Date create_date=new Date();
 	public String getName() {
 		return name;
@@ -13,11 +13,11 @@ public class WeixinToken implements Serializable {
 	public void setName(String name) {
 		this.name = name;
 	}
-	public String getAccess_token() {
-		return access_token;
+	public String getTicket() {
+		return ticket;
 	}
-	public void setAccess_token(String access_token) {
-		this.access_token = access_token;
+	public void setTicket(String ticket) {
+		this.ticket = ticket;
 	}
 	public Date getCreate_date() {
 		return create_date;

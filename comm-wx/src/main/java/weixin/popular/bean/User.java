@@ -7,153 +7,161 @@ import java.util.Date;
 
 public class User extends BaseResult implements Serializable {
 
-    private Integer subscribe; // 用户是否订阅该公众号标识，值为0时，代表此用户没有关注该公众号，拉取不到其余信息。
+	private Integer subscribe; // 用户是否订阅该公众号标识，值为0时，代表此用户没有关注该公众号，拉取不到其余信息。
 
-    private String openid; // 用户的标识，对当前公众号唯一
+	private String openid; // 用户的标识，对当前公众号唯一
 
-    private String nickname;
+	private String nickname;
 
-    private Integer sex; // 用户的性别，值为1时是男性，值为2时是女性，值为0时是未知
+	private Integer sex; // 用户的性别，值为1时是男性，值为2时是女性，值为0时是未知
 
-    private String city;
+	private String city;
 
-    private String province;
+	private String province;
 
-    private String country;
+	private String country;
 
-    private String headimgurl;
+	private String headimgurl;
 
-    private Date subscribeTime;
+	private Date subscribeTime;
 
-    private String unionid; // 多个公众号之间用户帐号互通UnionID机制
+	private String unionid; // 多个公众号之间用户帐号互通UnionID机制
 
-    private Integer groupid;
+	private Integer groupid;
 
-    private Long id;
+	private Long id;
 
-    private int status;
+	private Integer status;
 
-    private String remark;
+	private String remark;
 
-    public User() {
-    }
+	public User() {
+	}
 
-    public User(WeixinUser weixinUser) {
-        this.openid = weixinUser.getOpenid();
-        this.city = weixinUser.getCity();
-        this.country = weixinUser.getCountry();
-        this.groupid = weixinUser.getGroupid();
-        this.headimgurl = weixinUser.getHeadimgurl();
-        this.sex = weixinUser.getSex();
-        this.subscribe = weixinUser.getSubscribe();
-        this.unionid = weixinUser.getUnionid();
-        this.groupid = weixinUser.getGroupid();
-        this.remark = weixinUser.getRemark();
-        this.subscribeTime = new Date(weixinUser.getSubscribe_time() * 1000);
-        this.nickname = StrUtils.filterEmoji(weixinUser.getNickname());
-    }
+	public User(WeixinUser weixinUser) {
+		this.openid = weixinUser.getOpenid();
+		this.city = weixinUser.getCity();
+		this.country = weixinUser.getCountry();
+		this.groupid = weixinUser.getGroupid();
+		this.headimgurl = weixinUser.getHeadimgurl();
+		this.sex = weixinUser.getSex();
+		this.subscribe = weixinUser.getSubscribe();
+		this.unionid = weixinUser.getUnionid();
+		this.groupid = weixinUser.getGroupid();
+		this.remark = weixinUser.getRemark();
+		this.subscribeTime = new Date(weixinUser.getSubscribe_time() * 1000);
+		this.nickname = StrUtils.filterEmoji(weixinUser.getNickname());
+	}
 
-    public Integer getSubscribe() {
-        return subscribe;
-    }
+	public Integer getSubscribe() {
+		return subscribe;
+	}
 
-    public void setSubscribe(Integer subscribe) {
-        this.subscribe = subscribe;
-    }
+	public void setSubscribe(Integer subscribe) {
+		this.subscribe = subscribe;
+	}
 
-    public String getOpenid() {
-        return openid;
-    }
+	public String getOpenid() {
+		return openid;
+	}
 
-    public void setOpenid(String openid) {
-        this.openid = openid;
-    }
+	public void setOpenid(String openid) {
+		this.openid = openid;
+	}
 
-    public String getNickname() {
-        return nickname;
-    }
+	public String getNickname() {
+		return nickname;
+	}
 
-    public void setNickname(String nickname) {
-        this.nickname = nickname;
-    }
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
+	}
 
-    public Integer getSex() {
-        return sex;
-    }
+	public Integer getSex() {
+		return sex;
+	}
 
-    public void setSex(Integer sex) {
-        this.sex = sex;
-    }
+	public void setSex(Integer sex) {
+		this.sex = sex;
+	}
 
-    public String getCity() {
-        return city;
-    }
+	public String getCity() {
+		return city;
+	}
 
-    public void setCity(String city) {
-        this.city = city;
-    }
+	public void setCity(String city) {
+		this.city = city;
+	}
 
-    public String getProvince() {
-        return province;
-    }
+	public String getProvince() {
+		return province;
+	}
 
-    public void setProvince(String province) {
-        this.province = province;
-    }
+	public void setProvince(String province) {
+		this.province = province;
+	}
 
-    public String getCountry() {
-        return country;
-    }
+	public String getCountry() {
+		return country;
+	}
 
-    public void setCountry(String country) {
-        this.country = country;
-    }
+	public void setCountry(String country) {
+		this.country = country;
+	}
 
-    public String getHeadimgurl() {
-        return headimgurl;
-    }
+	public String getHeadimgurl() {
+		return headimgurl;
+	}
 
-    public void setHeadimgurl(String headimgurl) {
-        this.headimgurl = headimgurl;
-    }
+	public void setHeadimgurl(String headimgurl) {
+		this.headimgurl = headimgurl;
+	}
 
-    public Date getSubscribeTime() {
-        return subscribeTime;
-    }
+	public Date getSubscribeTime() {
+		return subscribeTime;
+	}
 
-    public void setSubscribeTime(Date subscribeTime) {
-        this.subscribeTime = subscribeTime;
-    }
+	public void setSubscribeTime(Date subscribeTime) {
+		this.subscribeTime = subscribeTime;
+	}
 
-    public String getUnionid() {
-        return unionid;
-    }
+	public String getUnionid() {
+		return unionid;
+	}
 
-    public void setUnionid(String unionid) {
-        this.unionid = unionid;
-    }
+	public void setUnionid(String unionid) {
+		this.unionid = unionid;
+	}
 
-    public Integer getGroupid() {
-        return groupid;
-    }
+	public Integer getGroupid() {
+		return groupid;
+	}
 
-    public void setGroupid(Integer groupid) {
-        this.groupid = groupid;
-    }
+	public void setGroupid(Integer groupid) {
+		this.groupid = groupid;
+	}
 
-    public Long getId() {
-        return id;
-    }
+	public Long getId() {
+		return id;
+	}
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+	public void setId(Long id) {
+		this.id = id;
+	}
 
-    public int getStatus() {
-        return status;
-    }
+	public Integer getStatus() {
+		return status;
+	}
 
-    public void setStatus(int status) {
-        this.status = status;
-    }
+	public void setStatus(Integer status) {
+		this.status = status;
+	}
+
+	public String getRemark() {
+		return remark;
+	}
+
+	public void setRemark(String remark) {
+		this.remark = remark;
+	}
 }
