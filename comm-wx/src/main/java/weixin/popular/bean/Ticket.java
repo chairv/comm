@@ -21,6 +21,4 @@ public class Ticket extends BaseResult{
 	public void setExpires_in(Integer expires_in) {
 		this.expires_in = expires_in;
 	}
-
-
 }
